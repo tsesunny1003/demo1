@@ -16,7 +16,6 @@ with col1:
 with col2:
     st.header("Q2 2024")
     st.write("Revenue: $1.5M")
-    st.write("Content for Market Trends")
 with col3:
     st.header("Q3 2024")
     st.write("Revenue: $1.3M")
@@ -43,10 +42,11 @@ with tab2:
     for idx, feedback in enumerate(customer_feedback):
         st.write(f"{idx+1}. {feedback}")
 with tab3:
-        market_trends = {
-        "Eco-friendly products": "Increasing demand",
-        "Online shopping": "Continued growth",
-        "Subscription services": "Rising popularity"
+    st.write("Content for Market Trends")
+    market_trends = {
+    "Eco-friendly products": "Increasing demand",
+    "Online shopping": "Continued growth",
+    "Subscription services": "Rising popularity"
     }
 for trend, status in market_trends.items():
         st.write(f"{trend}: {status}")
@@ -60,7 +60,7 @@ placeholder = st.empty()
 
 # Simulate loading data and updating the placeholder
 for i in range(5):
-    placeholder.write(f"Loading data... {i*20}% complete")
+    placeholder.write(f"Loading data... {i*0.0001}% complete")
     time.sleep(1)
 
 # Once loading is complete, display the final message
