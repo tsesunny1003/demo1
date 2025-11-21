@@ -76,7 +76,7 @@ for insight in business_insights:
     placeholder.write(insight)
     time.sleep(2)
 
-
+# app.py (2)
 import pandas as pd
 import streamlit as st
 from numpy.random import default_rng as rng
