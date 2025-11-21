@@ -48,7 +48,7 @@ with tab3:
         "Online shopping": "Continued growth",
         "Subscription services": "Rising popularity"
     }
-    for trend, status in market_trends.items():
+for trend, status in market_trends.items():
         st.write(f"{trend}: {status}")
 
 with st.expander("More Information"):
